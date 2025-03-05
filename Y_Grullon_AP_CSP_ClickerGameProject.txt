@@ -1,0 +1,73 @@
+import random
+Rect(0,0,400,400, fill=gradient('skyBlue','lightskyBlue','skyBlue', start='top'))###The Backround###
+Circle(120,175,100,fill=gradient('saddleBrown','sienna','peru',start='bottom-left'))###Cookie Base###
+# chocolate chips
+
+
+def cookie_topping(x,y):
+    chip_size = random.randint(10,15)
+    Circle(x,y,chip_size, fill='brown')
+    
+cookie_topping(190,130)
+cookie_topping(100,110)
+cookie_topping(150, 200)
+cookie_topping(75,150)
+cookie_topping(128,152)
+
+####
+box1 = Rect(300,10, 90,70, fill='red')###1###
+label1 =Label('Not Enough Cookies', 345,40,bold=False,size=8,font='orbitron')
+cost1 = Label(10, 345,40,bold=False,size=8,font='orbitron', visible = False)
+
+box2 = Rect(300,100, 90,70, fill='red')###2###
+label2 =Label('Not Enough Cookies', 345,130,bold=False,size=8,font='orbitron')
+
+box3 = Rect(300,200, 90,70, fill='red')###3###
+label3 = Label('Not Enough Cookies', 345,230,bold=False,size=8,font='orbitron')
+
+box4 = Rect(300,300, 90,70, fill='red')###4###
+label4 = Label('Not Enough Cookies', 345,330,bold=False,size=8,font='orbitron')
+####
+
+
+Label('Cookies:',120, 20, size=20, bold=True, font='orbitron')
+totalCounter = Label(0 ,120, 45, size=20, bold=True, font='orbitron')
+
+def onMousePress(x,y):
+    totalCounter.value += 1
+    
+    
+    if (totalCounter.value == 10):
+        box1.fill = 'lightGreen'
+        label1.value = 'Upgrade'
+
+        
+    if (totalCounter.value == 100):
+        box2.fill = 'lightGreen'
+        label2.value = 'Upgrade'
+        
+    if (totalCounter.value == 500):
+        box3.fill = 'lightGreen'
+        label3.value = 'Upgrade'
+        
+    if (totalCounter.value == 100):
+        box4.fill = 'lightGreen'
+        label4.value = 'Upgrade'
+        
+    
+def onMouseMove(mouseX,mouseY):
+    if(box1.hits(mouseX,mouseY) == True) and (box1.fill =='lightGreen'):
+        box1.border = 'Black'
+        box1.borderWidth = 3
+        label1.value = None
+        cost1.visible = True
+    else:
+        box1.border = None
+        box1.borderWidth = 0
+        label1.visble = True
+        cost1.visible = False
+        
+    
+
+    
+    
