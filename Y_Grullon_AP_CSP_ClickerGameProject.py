@@ -1,67 +1,93 @@
-##To randomly place each coin in the screen
 import random
 
 
-##The starting screen
-sb = Rect(0,0,400,400, fill =gradient('dodgerBlue','deepskyBlue','royalBlue','royalBlue',start='top-right'))
-sl =Label('Coin Game!', 200,100, fill=gradient('yellow','gold','gold'), size = 50)
-button = Rect(140,180, 125,50, fill=gradient('lime','lawnGreen',start='top-right'))
-play = Label('PLAY', 200,205,fill='black', size=30)
-StartS = Group(sb,sl)
-StartB = Group(button, play)
-    
-coins = Circle(200,200,25,fill=gradient('gold','yellow','gold',start='top-left'), visible=False)
+PlayButton = Group(Rect(150,200,100,35,fill='ForestGreen'),Label('PLAY', 200,217, size= 30, font='arial'))
+app.background = gradient('White','skyBlue','lightSkyBlue','skyBlue','skyBlue','lawnGreen','limeGreen', start='top')
+ScreenName = Label('Snake?!', 200,150,size=50, rotateAngle=- 10)
+snakeStart = Group(Rect(70,350,20,5), Circle(100,355,2, fill='red'))
 
+clicker = Circle(200,200, 1, fill='yellow')
 
-
-coin_count = 0
-BackGround = 0
-
-def game_backGround():
-    global coin_count, BackGround
-    ##The background 
-    BackGround = Rect(0,0,400,400, fill=gradient('lightBlue','paleTurquoise','lightBlue','lightCyan', start='left'))
-    BackGround.misses = 0
-    ##The counter for the number of coins you cicked
-    coin_count = Label(0,200,55, font='grenze', size = 50)
-    Label('Coins:',200,20, font='grenze', size = 50)
-    #The coins model
-    
-
-#The mouse pointer
-clicker = Circle(200,200,5,fill='red')
-
-##This follows the users mouse
 def onMouseMove(x,y):
-    clicker.centerX = x
+    clicker.centerX =x
     clicker.centerY = y
-    
-    
-##This the user earn misses and coins which is determined where they click
+
 def onMousePress(x,y):
-    global coin_count, BackGround
-    if (clicker.hitsShape(StartB) ==True):
-        StartS.visible = False
-        StartB.visible = False
-        coins.visible = True
-        game_backGround()
+    if (clicker.hitsShape(PlayButton) == True):
+        PlayButton.visible = False
+        ScreenName.visible = False
+        snakeStart.visible = False
+        clicker.visible = False
+        
+        
+        app.background = gradient('lawnGreen','limeGreen','lawnGreen','limeGreen','lime', 'green' ,start = 'top-left')
+        snake.visible = True
+        apple.visible = True
+        Eat.visible = True
+        e.visiible = True
     
-        if (clicker.hitsShape(coins) == True):
-            coin_count.value += 1
-            print('Hit')
-            coins.centerX = random.randint(0,370) 
-            coins.centerY = random.randint(0,270)
-        
-        
-        elif (clicker.hitsShape(coins) ==False):
-            BackGround.misses +=1 
-            print('Miss')
-        
-        else:
-            
-        
+
+
+
+## The head of the snake, used group to add on extra shapes 
+snake = Group(Rect(20,200,25,25, visible = False))
+
+
+
+
+##The shape for the apple
+apple = Circle(200,200,10, fill='red', visible = False)
+##The label 'apples eaten'
+Eat = Label('Apples Eaten:', 200,20,size = 30, font='arial', visible = False)
+##The number label which will be changed every time the snake hits the apple
+e = Label(0,320,20, size=30, font='orbitron',visible = False)
+
+
+hits = True
+eaten = 0
+
+def onStep():
+    global hits, eaten
+    ##make it so the snake will always move to the right
+    snake.centerX+=1
+    ##It will reset the snake back when it hits 400 in the Y axis
+    if snake.centerY>400:
+        snake.centerY = 0
+    ##It will reset the snake back when it hits 400 in the X axis    
+    elif snake.centerX > 400:
+        snake.centerX = 0
     
-            print(BackGround.misses)
+    ##If the snake hits the apple and hits equals true then adds 1 to the e label and apple visisble == False 
+    if (snake.hitsShape(apple)==True) and hits == True:
+        eaten +=1
+        e.value = eaten
+        hits = False
+        apple.visible = False
+        ##This another rectangle to the snake everytime it hits the apple
+        snake.add(Rect(snake.centerX-35, snake.centerY-12, 25,25))
+        apple.centerX = random.randint(50,300)
+        apple.centerY = random.randint(50,300)
+        apple.visible = True
+        hits = True
         
-    
-    
+
+        
+        
+        print('Hit!')
+        
+        
+
+
+def onKeyPress(key):
+    global Key_Press
+    if key == 'w':
+        snake.centerY-=10
+    elif key=='a':
+        snake.centerX-=10
+    elif key=='s':
+        snake.centerY+=10
+    elif key=='d':
+        snake.centerX+=10
+        
+        
+        
