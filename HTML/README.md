@@ -12,7 +12,7 @@ This artifact contributes to my overall learning experience as a Computer Scienc
 Initially, the HTML page was just explaining how fútbol was played and its orgins. Over time, I improved it by adding a list of my favorite players in the game. To exclude any type of bias I included evidence like the number of wins they have, goals and how they influenced fútbol as a whole to enforce my favoritism towards them. 
 
 ## what might I have done differently?
-If I could do it again, I would have spent more time planning the layout before writing the code. I would also make the information more clear
+If I could do it again, I would have spent more time planning the layout before writing the code. I would also make the information more clear.
 
 ## If I were to further develop this artifact, what would I next steps be?
-To develop this further, I would create a more cleaner design and make it more interactive for the users. 
+To develop this further, I would create a more cleaner design and make it more interactive for the users.
