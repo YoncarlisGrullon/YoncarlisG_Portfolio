@@ -6,6 +6,7 @@
 This artifact is a remake of a very popular game, snake. Snake is basically a game where the user is a snake and they have to eat apples to grow bigger the amount of apples they eat is equivalent to there points. Its purpose was to see if different shapes can be turned into a game, expressing the creativity of Ap csp.
 
 ## In what ways did this artifact contribute to my overall learning experience as a Computer Science major?
+This artifact contributed to my overall learning experience as a Computer Science major 
  
 ## How has this artifact been iteratively developed over time? 
 
