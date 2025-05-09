@@ -1,7 +1,7 @@
 # YoncarlisG_Portfolio
 
-My name is Yoncarlis Grullon and student at Inwood Early college 
+My name is Yoncarlis Grullon, I am a senior who is going to graduate in June 2025 and this is the start of something which I would like to add on to the future. The things I've learned is just me scratching the surface of something much greater.  
 
-This Portfolio is the general overview on what I've have learn in the Computer Science course in Inwood Early College. It will showcase artifacts which I created that represent what I've learned throughout freshmen year to senior year. The CS course is broken to 4 major topics for each academic year. Freshmen year was learning the basics of HTML and familiarizing are selves with coding, sophomore year was Ap csp, which was the year when we started learning what computer science is and basic python, junior year was python 1 and 2, and lastly senior year is data science. 
+This Portfolio is the general overview on what I've have learn in the Computer Science course in Inwood Early College. It will showcase artifacts which I created that represent what I've learned throughout freshmen year to senior year. The CS course is broken to 4 major topics for each academic year. Freshmen year was learning the basics of HTML and familiarizing are selves with coding, sophomore year was Ap csp, which was the year when we started learning what computer science is and basic python, junior year was python 1 and 2, and lastly senior year is data science.
 
-The HTML and Ap csp artifacts were completed in senior year because of course fixes. I've relearned the baiscs of HTML this year to finish the artifact. I've also learned Ap csp with shapes instead of plain text. 
+The HTML and CMU graphics artifacts were completed in senior year because of course fixes. I've relearned the basics of HTML this year to finish the artifact. I've also learned CMU graphic instead of plain text. 
