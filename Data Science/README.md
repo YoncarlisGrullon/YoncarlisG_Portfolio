@@ -1,6 +1,7 @@
 #### Yoncarlis G
 ##### 5/7/25
 # Artifact Reflection: Data Science
+[Data Science  Artifact](https://github.com/YoncarlisGrullon/YoncarlisGrullon.github.io/blob/main/GrullonY_DataStoryProject.ipynb)
 
 ## How would I describe this artifact, and what is its purpose?
 This artifact is data which I analyzed and manipulated to create different graphs to show its connections. The data consisted of the health of people in different U.S county's, the dataset had many columns with different percentages, its purpose was to determine if people with obesity is tethered to being physically inactive. This purpose is to backup any uncertainty with graphs to show people its affect.
