@@ -6,4 +6,7 @@ This Portfolio is the general overview on what I've have learn in the Computer S
 
 The HTML and CMU graphics artifacts were completed in senior year because of course fixes. I've relearned the basics of HTML this year to finish the artifact. I've also learned CMU graphic instead of plain text. 
 
+My certs:
+[PCEP](https://github.com/YoncarlisGrullon/YoncarlisG_Portfolio/blob/main/PCEP_Certificate_Grullon_Yoncarlis.pdf)
+
 
