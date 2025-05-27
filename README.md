@@ -1,5 +1,5 @@
 # YoncarlisG_Portfolio
-
+## About me
 My name is Yoncarlis Grullon, I am a senior who is going to graduate in June 2025 and this is the start of something which I would like to add on to the future. The things in this porfolio is just me scratching the surface of something much greater.  
 
 This Portfolio is the general overview on what I've have learn in the Computer Science course in Inwood Early College. It will showcase artifacts which I created that represent what I've learned throughout freshmen year to senior year. The CS course is broken to 4 major topics for each academic year. Freshmen year was learning the basics of HTML and familiarizing are selves with coding, sophomore year was Ap csp, which was the year when we started learning what computer science is and basic python, junior year was python 1 and 2, and lastly senior year is data science.
