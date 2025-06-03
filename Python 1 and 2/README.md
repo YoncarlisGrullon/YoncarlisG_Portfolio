@@ -15,6 +15,6 @@ This artifact has been iteratively developed over time because it started out ha
 ## what might I have done differently?
 I would have hard coded some setting to default or even make more setting so the user can have the freedom to change how they play the game. I would have also added more advance math equations.
 
-## If I were to further develop this artifact, what would I next steps be?
+## If I were to further develop this artifact, what would my next steps be?
 If I were to further to develop this artifact I would make it more visually appealing and fully debug the program.
 
