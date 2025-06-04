@@ -2,6 +2,7 @@
 ##### 5/6/25
 # Artifact Reflection: AP Comp Sci Principles 1 and 2
 [The Game Now](https://yoncarlisgrullon.github.io/Snake.html)
+
 [The Game Before](https://yoncarlisgrullon.github.io/Y_Grullon_CMU_SnakeGame.html)
 
 ## How would I describe this artifact, and what is its purpose?
