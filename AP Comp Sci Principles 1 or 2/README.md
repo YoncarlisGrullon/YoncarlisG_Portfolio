@@ -3,7 +3,7 @@
 # Artifact Reflection: AP Comp Sci Principles 1 and 2
 [The Game Now](https://yoncarlisgrullon.github.io/Snake.html)
 
-[The Game Before](https://yoncarlisgrullon.github.io/Y_Grullon_CMU_SnakeGame.html)
+[The Game Before](https://yoncarlisgrullon.github.io/Y_Grullon_CMU_SnakeGameVideo.mp4)
 
 ## How would I describe this artifact, and what is its purpose?
 This artifact is a remake of a very popular game, snake. Snake is basically a game where the user is a snake and they have to eat apples to grow bigger the amount of apples they eat is equivalent to there points. Its purpose was to see if different shapes can be turned into a game, expressing the creativity of Ap csp.
